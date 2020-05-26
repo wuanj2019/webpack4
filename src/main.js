@@ -15,7 +15,7 @@ const flag = isShow(window.document.body);
 
 console.log(_.keys([1, 2, 3, 4, 5, 6, 77]));
 console.log(flag);
-console.log(1234);
+console.log(123412);
 
 import "./assets/scss/style.css";
 import "./assets/scss/index.scss";
@@ -51,7 +51,9 @@ d.addEventListener("input", function (e) {
   console.log(window.obj, window.obj.a);
 });
 
-// if (module.hot) {
-//   module.hot.accept();
-//   module.hot.accept(["./app.js", "./utils"], function () {});
-// }
+window.obj.a = 2
+
+if (module.hot) {
+  module.hot.accept();
+  module.hot.accept(["./app.js", "./utils"], function () {});
+}
