@@ -1,0 +1,19 @@
+.b {
+  width: 200px;
+  height: 200px;
+  background: url("./../imgs/logo.png") no-repeat center;
+  background-size: contain;
+}
+
+body {
+  background-color: white;
+  font-size: large;
+}
+
+.d-flex {
+  display: flex;
+  grid-column-start: auto;
+  grid-column: span;
+  display: grid;
+  column-count: 4;
+}
